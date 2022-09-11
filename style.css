@@ -66,22 +66,26 @@ body {
     font-weight: 300;
 }
 
-.card {
+.cardd {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background-color: blueviolet;
     border-radius: 15px;
 }
 
 .cardContent {
     width: 100%;
-    background-color: hsl(235, 46%, 20%);
+    background-color: rgb(28, 31, 74);
     border-radius: 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.cardContent:hover {
+    background-color: hsl(236, 43%, 33%);
 }
 
 .cardHeaderBanner {
@@ -111,6 +115,66 @@ body {
     color: white;
 }
 
+.cardInfo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+}
+
+.hours, .hours:hover {
+    color: white;
+    font-size: 2.6vw;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.lastWeek, .lastWeek:hover {
+    color: hsl(235, 45%, 61%);
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 0.8vw;
+}
+
+.imClass {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 50px;
+    padding-right: 7%;
+}
+
 .cardIm {
     width: 25%;
+    overflow: hidden;
+}
+
+#work {
+    background-color: rgb(255, 140, 102);
+    background: linear-gradient(0deg, rgba(28,31,74,1) 38%, rgba(255,140,102,1) 38%);
+}
+
+#play {
+    background-color: hsl(195, 74%, 62%);
+    background: linear-gradient(0deg, rgba(28,31,74,1) 38%, hsl(195, 74%, 62%) 38%);
+}
+
+#study {
+    background-color: hsl(348, 100%, 68%);
+    background: linear-gradient(0deg, rgba(28,31,74,1) 38%, hsl(348, 100%, 68%) 38%);
+}
+
+#exercise {
+    background-color: hsl(145, 58%, 55%);
+    background: linear-gradient(0deg, rgba(28,31,74,1) 38%, hsl(145, 58%, 55%) 38%);
+}
+
+#social {
+    background-color: hsl(264, 64%, 52%);
+    background: linear-gradient(0deg, rgba(28,31,74,1) 38%, hsl(264, 64%, 52%) 38%);
+}
+
+#selfCare {
+    background-color: hsl(43, 84%, 65%);
+    background: linear-gradient(0deg, rgba(28,31,74,1) 38%, hsl(43, 84%, 65%) 38%);
 }
